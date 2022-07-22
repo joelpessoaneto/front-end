@@ -1,0 +1,59 @@
+<!-- a tecnica de rolagem fluido comsiste em voce trabalhar com o layout se adptando a tela-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Layouts-fluidos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/layouts-fluidos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Layouts Fluidos</h1>
+    <p>Adapta a largura da tela</p>
+
+    <!-- esse div sera o conterner de um site que tera 100% width-->
+    <section>
+        <h2>100% width / largura 100%</h2>
+         
+        <div class="width-100">
+
+        <nav>
+            navegacao
+        </nav>
+
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut quod, totam, esse, laudantium a dolorum animi nisi asperiores alias vitae placeat quae voluptatibus nihil ea sit ipsa enim at.
+
+            <div class="fixed-width">
+                largura fixa
+            </div>
+
+            <div class="background">
+            reptir imagen na horizontal
+            </div>
+
+            <div>
+
+<!-- a logiv=ca da programacao abaixo caso a largura maxima da tela 
+seja 480px ele deve chamar a imagen no srcset caso seja maior que 480px ele vai rodar o padrao que esta na tag img tudo isso apartir de uma tag e os atributo dela voce pode fazer isso de qualquer tamanho ou voce pode usar como referencias telas de dispositiveis para otimizar o tamanho da imagen para os dispositiveis com tamanho de telas diferentes -->                
+                <picture>
+
+                    <source media="(max-width:800px)" srcset="./images/cafe-quadrado.png">
+
+                    <source media="(min-width:480px)" srcset="./images/cafe-sm.png">                 
+                    <img src="./images/cafe.jpg" alt="cefe imagen">
+                </picture>
+
+<!-- vocde viu que e possivel voce chamar o arquivo de imagen para adptar ao layout e tambem utilizar a propriedade width da imagen para que lea se adpti a estrutura do comterner a largura do conterner e voce comsegue chamar arquivos de imagen diferentes para cada tipo de resolucao -->                
+                
+            </div>
+        </article>
+
+    </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="x-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/grafico.css">
+        <title>elementos-graficos</title>
+    </head>
+
+    <body>
+        <h1>elementos-graficos</h1>
+        <div id="grafico-01">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo iusto repellat commodi inventore. Perferendis animi quis accusamus officia sunt doloremque eos porro minima distinctio? Assumenda dolor nam optio laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo iusto repellat commodi inventore. Perferendis animi quis accusamus officia sunt doloremque eos porro minima distinctio? Assumenda dolor nam optio laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo iusto repellat commodi inventore. Perferendis animi quis accusamus officia sunt doloremque eos porro minima distinctio? Assumenda dolor nam optio laborum.</p>
+
+        </div>
+        <div id="grafico-02">
+
+        </div>
+
+        <div id="grafico-03">
+            
+            <img src="./images/cafe.jpg" alt="cafe">
+        </div>
+      
+        <div id="grafico-04">
+
+        </div>
+
+        <div id="imagen-vetorial">
+            <img src="./images/coffee.svg" alt="cafe">
+
+<!-- svg ele e um tipo de imagen vetorial, o svg ele significa Scalable Vector Graphics ele foi criado especificamente para web funciona tanto imagens estaticas quanto animacoes em 2d que e imagens que utilizan apenas 2 eixos que e x e y-->            
+        </div>
+
+        <div> <canvas id="canvas"></canvas></div>
+       
+        <script>
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#00FF99";
+            ctx.fillRect(0, 0, 80, 80);
+        </script>
+
+    </body>
+</html>

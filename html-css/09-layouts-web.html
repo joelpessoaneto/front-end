@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> layouts web </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- esse codigo em cima serve para que o layout se adpta
+		em positiveis de telas diferentes por exemplo celular, e computador tem
+	telas de tamanho diferentes-->
+
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 
+		
+		<!-- Estilos Personalizados -->
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/layout.css">
+		<link rel="stylesheet" type="text/css" href="./css/grafico-2.css">
+	</head>
+	<body>
+
+		<header>
+			<h2> Font-end </h2>
+		</header>
+
+		<section>
+            <nav>
+				<h3>Aulas</h3>
+				<ul class="navegacao">
+					<li id="primeiro-link"><a href="01-introducao.html">Introdução</a></li>
+					<li><a href="02-listas-e-links.html">Listas e Links</a></li>
+					<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+					<li><a href="04-tabelas.html">Tabelas</a></li>
+					<li><a href="05-layouts.html">Layouts</a></li>
+					<li><a href="06-formularios.html">Formulários</a></li>
+                    <li><a href="07-layouts-fluidos.html" target="meu-iframe">layouts fluidos</a></li>
+                    <li><a href="08-elementos-graficos">elementos graficos</a></li>
+                    <!-- target com o valor do atributo nome ao clicar no link
+					ao inveis de entrar na pagina ele criarar em uma moldura iframe a pagina
+				que clicou usando no ifreme um atributo name-->
+
+                    <li><a href="09-layouts-web" >layouts web</a></li>
+					<li><a href="https://ebaconline.com.br" target="_blank">EBAC-Escola Britanica de Artes Criativas</a></li>
+					<!--target com valor _blank e um atributo de ancora para criar uma pagina  nova
+					ou seja em novo guia-->
+				</ul>
+			</nav>
+
+			<article>
+                <h1>elementos-graficos</h1>
+
+                <div id="grafico-03">
+            
+                    <img class="flitro" src="./images/cafe.jpg" alt="cafe">
+                </div>
+
+		        <div class="coluna">coluna 1
+                    <h3>layouts em colunas</h3>
+
+				</div>
+				<div class="coluna">coluna 2
+                    <img class="flitro" src="./images/cafe.jpg" alt="cafe">
+
+				</div>
+				<div class="coluna coluna-3">coluna 3
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nulla, dicta minus rerum exercitationem laboriosam veniam debitis beatae illum doloremque, voluptate eos cupiditate mollitia incidunt libero ipsum. Dolor, illum culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nulla, dicta minus rerum exercitationem laboriosam veniam debitis beatae illum doloremque, voluptate eos cupiditate mollitia incidunt libero ipsum. Dolor, illum culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nulla, dicta minus rerum exercitationem laboriosam veniam debitis beatae illum doloremque, voluptate eos cupiditate mollitia incidunt libero ipsum. Dolor, illum culpa.
+
+				</div>
+
+				<!-- a div esta herdando a class coluna-->
+				<div class="coluna">
+					<!-- iframe cria uma moldura para criar uma pagina
+					dentro de outra-->
+
+					<p>pagina dentro de uma pagina</p>
+					<iframe src="./02-listas-e-links.html" width="100%"
+					height="400px" name="meu-iframe"></iframe>
+				</div>
+
+				<div class="coluna coluna-video-youtube">
+					<p>video direto do youtube</p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/4XBx7qGFE4s" 
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+					encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<div class="coluna coluna-100w">
+					<p>localizacao direto do goole maps</p>
+					<br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.763659833415!2d-46.65501878255614!3d-23.541001399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57bc513b0395%3A0xf8caecd88e8edbad!2sEBAC!5e0!3m2!1spt-BR!2sbr!4v1657408082325!5m2!1spt-BR!2sbr" 
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+				</div>
+
+				<div class="coluna coluna-s-v">
+					<p>diretamente do google street view</p>
+					<br>
+					<iframe src="https://www.google.com/maps/embed?pb=!4v1657409681430!6m8!1m7!1sSXuTNamLLJ528RNJgiSTrA!2m2!1d22.74947470917288!2d-102.584345543429!3f39.160988819349285!4f-6.261461269780781!5f0.7820865974627469" 
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<!-- se entra no site da ebac dentro da pagina ele nao sera carregado
+				pois ele nao possui o cors 
+			    cross-origin Resource Sharing ( compartilhamento
+				de recursos com origins diferentes )-->
+
+				<!-- entao iframe cria janelas que eu comsigo
+				assesar conteudos diferentes paginas diferentes sites na 
+			propria pasta-->
+			<!-- iframe funciona em qualquer pagina que possui url
+			e usa o cors-->
+      
+
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Joel</p>
+		</footer>
+		
+	</body>
+</html>
